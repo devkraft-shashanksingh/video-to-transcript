@@ -63,9 +63,9 @@ def upload_with_progress(file_path: str, api_key: str, status_box, progress_bar)
     return resp.json()["upload_url"]
 
 
-st.set_page_config(page_title="Video to Transcript", page_icon="🎬")
-st.title("Video to Text Transcript")
-st.write("Upload a video/audio file or paste a URL to generate a transcript.")
+st.set_page_config(page_title="Media Transcriber", page_icon="🎙️")
+st.title("Media Transcriber")
+st.write("Upload a video or audio file, or paste a URL to generate a transcript.")
 
 api_key = st.text_input("AssemblyAI API Key", type="password")
 
